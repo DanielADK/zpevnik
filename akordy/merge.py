@@ -36,6 +36,7 @@ def do_merge(songlist, outfile, initfile=init):
     Merge song files specified in 'songlist' to the output file 'outfile'.
     Unless 'initfile' is None, its contents are prepended.
     '''
+    print(outfile)
     with open(outfile, 'w', encoding='utf8') as fout:
         if initfile is not None:
             fout.write(open(initfile, 'r', encoding='utf8').read())

@@ -117,6 +117,7 @@ def write(output, fpath):
 
 if __name__ == '__main__':
   index = Index(sys.argv[1])
+  print(sys.argv)
   write(index.titleTex(), sys.argv[2])
   write(index.authorTex(), sys.argv[3])
     
